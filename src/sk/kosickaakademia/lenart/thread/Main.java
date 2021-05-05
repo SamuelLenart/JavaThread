@@ -6,8 +6,9 @@ public class Main {
         ThreadDemo threadDemo = new ThreadDemo("Start thread", 2);
         threadDemo.start();
 
-        ThreadDemo threadDemo2 = new ThreadDemo("Start thread2", 0);
-        threadDemo2.start();
+
+        PrimeNumber pn = new PrimeNumber("primeThread",116);
+        pn.start();
         System.out.println("Thread finished");
     }
 }

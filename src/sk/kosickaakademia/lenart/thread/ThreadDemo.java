@@ -29,6 +29,8 @@ public class ThreadDemo implements Runnable{
         if (t == null) {
             t = new Thread(this, threadName);
             t.start();
+        }else{
+            System.out.println("Error : "+threadName+" is already running.");
         }
     }
 }
